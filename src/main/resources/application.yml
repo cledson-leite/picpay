@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: picpay
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/picpaydb
+    username: admin
+    password: 123
+    driver-class-name: com.mysql.cj.jdbc.Driver
