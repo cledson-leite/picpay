@@ -27,8 +27,5 @@ public class Wallet {
     private String email;
     private String password;
     private BigDecimal balance = BigDecimal.ZERO;
-
-    @ManyToOne
-    @JoinColumn(name = "wallet_type_id")
     private WalletType walletType;
 }
