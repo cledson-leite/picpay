@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import springboot.desafio.picpay.dto.CreateWalletDto;
 import springboot.desafio.picpay.entity.Wallet;
-import springboot.desafio.picpay.entity.WalletType;
+import springboot.desafio.picpay.entity.enums.WalletType;
 import springboot.desafio.picpay.exception.DuplicateWalletException;
 import springboot.desafio.picpay.repository.WalletRepository;
 
