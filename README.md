@@ -1,0 +1,3 @@
+# Projeto: Desafio Backend PicPay Simplificado
+Este projeto é uma implementação simplificada do sistema de pagamentos PicPay, desenvolvido como parte de um [desafio técnico](https://github.com/PicPay/picpay-desafio-backend) para backend. 
+O objetivo é criar uma API robusta e funcional que simula as operações essenciais de uma carteira digital, com foco principal na transferência de valores entre diferentes tipos de usuários, seguindo as regras de negócio e boas práticas de desenvolvimento.
