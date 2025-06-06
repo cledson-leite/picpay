@@ -23,12 +23,16 @@ public class WalletService {
     private ModelMapper mapper;
 
     public Wallet save(CreateWalletDto dto) {
-        String typeRaw = dto.getWalletType().trim().toUpperCase();
-        WalletType type = WalletType.valueOf(typeRaw);
+        WalletType type = formatType(dto);
         Wallet entity = this.mapper.map(dto, Wallet.class);
         entity.setWalletType(type);
         ensuredWalletNotExist(entity);
         return this.walletRepository.save(entity);
+    }
+
+    private static WalletType formatType(CreateWalletDto dto) {
+        String typeRaw = dto.getWalletType().trim().toUpperCase();
+        return WalletType.valueOf(typeRaw);
     }
 
     private void ensuredWalletNotExist(Wallet entity) {
